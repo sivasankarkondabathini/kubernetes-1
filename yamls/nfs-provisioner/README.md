@@ -27,6 +27,7 @@ In /etc/exports file, add entry.. making the directory accessible for * or any n
 /srv/nfs/kubedata       *(rw,sync,no_subtree_check,no_root_squash,insecure)
 
 sudo exportfs -rav
+
 sudo exportfs -v
 
 
