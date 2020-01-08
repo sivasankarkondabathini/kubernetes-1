@@ -13,7 +13,7 @@ Note: Always check the Reclaim policy present in created pv.. by default it is D
 we also need to create certain roles and cluster permissions for nfs-provisioner to operate. and always Storage classes should match in pv and pvs.
 
 ---------------
-## install nfs server
+## install and configure NFS server
 
 From nfs server:
 sudo yum install nfs-utils
