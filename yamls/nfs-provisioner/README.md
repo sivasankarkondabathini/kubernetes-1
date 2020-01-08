@@ -10,7 +10,9 @@ Now, everytime we have to create pv and pvc, and use pvc in any pod configuratio
 Now, using nfs-provisioner deployment, which runs in the background as a pod on any of the node.. we don't have to create a pv evrytime. Using just pvc we can provision the pv dynamically... this helps in larger org when requesting volumes many times...
 
 Note: Always check the Reclaim policy present in created pv.. by default it is DELETE, so if we delete pod or pvc.. entire volume will go off.
+we also need to create certain roles and cluster permissions for nfs-provisioner to operate. and always Storage classes should match in pv and pvs.
 
+---------------
 ## install nfs server
 
 From nfs server:
