@@ -12,6 +12,8 @@ Now, using nfs-provisioner deployment, which runs in the background as a pod on 
 Note: Always check the Reclaim policy present in created pv.. by default it is DELETE, so if we delete pod or pvc.. entire volume will go off.
 we also need to create certain roles and cluster permissions for nfs-provisioner to operate. and always Storage classes should match in pv and pvs.
 
+USE 4-* yamls files to check pv and pvs using nginx deployment and make it nodeport service.
+
 ---------------
 ## install and configure NFS server
 
